@@ -13,6 +13,7 @@ export default function(recalc) {
       scrollDiv.style.height = '50px';
       scrollDiv.style.overflow = 'scroll';
 
+      if (!document.body) return;
       document.body.appendChild(scrollDiv);
       size = scrollDiv.offsetWidth - scrollDiv.clientWidth;
       document.body.removeChild(scrollDiv);
